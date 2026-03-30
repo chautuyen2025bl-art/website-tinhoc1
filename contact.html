@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ | THPT Tân Phong</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">TP</div>
+                <div class="logo-text">
+                    THPT Tân Phong
+                    <span>Câu lạc bộ học sinh</span>
+                </div>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Trang chủ</a>
+                <a href="clubs.html" class="nav-link">Câu lạc bộ</a>
+                <a href="contact.html" class="nav-link active">Liên hệ</a>
+            </nav>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <div class="breadcrumb">
+                    <a href="index.html">Trang chủ</a>
+                    <span>/</span>
+                    <span>Liên hệ</span>
+                </div>
+                <h1>Liên hệ</h1>
+                <p>Có câu hỏi hoặc muốn biết thêm thông tin? Hãy liên hệ với chúng tôi!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section form-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Thông tin liên hệ</h2>
+                    <p>Bạn có thể liên hệ với chúng tôi qua các kênh sau đây:</p>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">🏫</div>
+                        <div class="contact-info-text">
+                            <h4>Trường THPT Tân Phong</h4>
+                            <p> Ấp khúc chéo A, xã Phong Thạnh<br>  tỉnh Cà Mau</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">📞</div>
+                        <div class="contact-info-text">
+                            <h4>Điện thoại</h4>
+                            <p>0822652988 <br>Văn phòng: Đang cập nhật </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">✉️</div>
+                        <div class="contact-info-text">
+                            <h4>Email</h4>
+                            <p>clb@thptanphong.edu.vn<br>info@thptanphong.edu.vn</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">🌐</div>
+                        <div class="contact-info-text">
+                            <h4>Mạng xã hội</h4>
+                            <p>Facebook: /clbthptanphong<br>Instagram: @clbthptanphong</p>
+                        </div>
+                    </div>
+
+                    <!-- Map placeholder -->
+                    <div class="contact-map">
+                        <img src="img/img-0.jpg" alt="Bản đồ">
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Gửi tin nhắn</h2>
+                    <p>Điền thông tin bên dưới để gửi tin nhắn cho chúng tôi:</p>
+                    
+                    <form action="thanks.html" method="get" style="margin-top: 30px;">
+                        <div class="form-group">
+                            <label for="name">Họ và tên <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Nguyễn Văn A" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="example@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="0901234567">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Chủ đề</label>
+                            <select id="subject" name="subject" class="form-control">
+                                <option value="">-- Chọn chủ đề --</option>
+                                <option value="clb-english">Hỏi về CLB Tiếng Anh</option>
+                                <option value="clb-stem">Hỏi về CLB STEM</option>
+                                <option value="clb-volleyball">Hỏi về CLB Bóng chuyền</option>
+                                <option value="join">Đăng ký tham gia CLB</option>
+                                <option value="event">Hỏi về sự kiện</option>
+                                <option value="cooperation">Hợp tác / Tài trợ</option>
+                                <option value="other">Khác</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Nội dung tin nhắn <span class="required">*</span></label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Nhập nội dung tin nhắn của bạn..." required></textarea>
+                        </div>
+
+                        <div class="form-note">
+                            <p>⚠️ <strong>Lưu ý:</strong> Đây là website tĩnh phục vụ mục đích học tập. Thông tin bạn điền chỉ mang tính chất mô phỏng và không được gửi đi thực sự.</p>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 18px;">
+                            📨 Gửi tin nhắn
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CLB Section -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Liên hệ trực tiếp CLB</h2>
+                <p>Bạn cũng có thể liên hệ trực tiếp với từng câu lạc bộ</p>
+            </div>
+            <div class="clubs-grid">
+                <div class="sidebar-card" style="background: white; text-align: center;">
+                    <div class="join-info-icon" style="background: linear-gradient(135deg, var(--english-color) 0%, var(--english-light) 100%); margin: 0 auto 20px;">🌍</div>
+                    <h3 style="color: var(--english-color);">CLB Tiếng Anh</h3>
+                    <ul style="text-align: left; margin-top: 20px;">
+                        <li style="padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                            <strong>Chủ nhiệm:</strong> Từ Thái Nhàn
+                        </li>
+                        <li style="padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                            <strong>Email:</strong> english.clb@thptanphong.edu.vn
+                        </li>
+                        <li style="padding: 10px 0;">
+                            <strong>Fanpage:</strong> fb.com/englishclbtp
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card" style="background: white; text-align: center;">
+                    <div class="join-info-icon" style="background: linear-gradient(135deg, var(--stem-color) 0%, var(--stem-light) 100%); margin: 0 auto 20px;">🔬</div>
+                    <h3 style="color: var(--stem-color);">CLB STEM</h3>
+                    <ul style="text-align: left; margin-top: 20px;">
+                        <li style="padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                            <strong>Chủ nhiệm:</strong> Nguyễn Văn Mến
+                        </li>
+                        <li style="padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                            <strong>Email:</strong> stem.clb@thptanphong.edu.vn
+                        </li>
+                        <li style="padding: 10px 0;">
+                            <strong>Fanpage:</strong> fb.com/stemclbtp
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card" style="background: white; text-align: center;">
+                    <div class="join-info-icon" style="background: linear-gradient(135deg, var(--volleyball-color) 0%, var(--volleyball-light) 100%); margin: 0 auto 20px;">🏐</div>
+                    <h3 style="color: var(--volleyball-color);">CLB Bóng chuyền</h3>
+                    <ul style="text-align: left; margin-top: 20px;">
+                        <li style="padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                            <strong>Đội trưởng:</strong> Phạm Tuy Cô
+                        </li>
+                        <li style="padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                            <strong>Email:</strong> volleyball.clb@thptanphong.edu.vn
+                        </li>
+                        <li style="padding: 10px 0;">
+                            <strong>Fanpage:</strong> fb.com/volleyballclbtp
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="../index.html" class="logo">
+                        <div class="logo-icon">TP</div>
+                        <div class="logo-text">
+                            THPT Tân Phong
+                            <span>Câu lạc bộ học sinh</span>
+                        </div>
+                    </a>
+                    <p>Hệ thống câu lạc bộ THPT Tân Phong - Nơi phát triển đam mê và kết nối những tâm hồn đồng điệu.</p>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Liên kết nhanh</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="clubs.html">Câu lạc bộ</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Câu lạc bộ</h4>
+                    <ul class="footer-links">
+                        <li><a href="english-club.html">CLB Tiếng Anh</a></li>
+                        <li><a href="stem-club.html">CLB STEM</a></li>
+                        <li><a href="volleyball-club.html">CLB Bóng chuyền</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Liên hệ</h4>
+                    <p>📍 Ấp khúc chéo A, xã Phong Thạnh, tỉnh Cà Mau</p>
+                    <p>📞 0822652988</p>
+                    <p>✉️ clb@thptanphong.edu.vn</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 THPT Tân Phong. Thiết kế bởi học sinh.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

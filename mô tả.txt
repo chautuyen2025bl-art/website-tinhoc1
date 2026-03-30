@@ -1,0 +1,448 @@
+1. Trang chủ – index.html
+1.1 Mục đích
+
+Giới thiệu tổng quan website và các CLB của trường.
+
+Điều hướng người xem đến trang chi tiết từng CLB.
+
+Tạo ấn tượng ban đầu, cung cấp thông tin nổi bật: hoạt động – sự kiện – tuyển thành viên.
+
+1.2 Đối tượng sử dụng
+
+Học sinh THPT Tân Phong (đang tìm CLB để tham gia).
+
+Giáo viên phụ trách CLB/nhà trường (xem thông tin tổng hợp).
+
+Phụ huynh (tham khảo hoạt động ngoại khóa của trường).
+
+1.3 Nội dung chính
+
+Header: logo/tên trường + menu điều hướng.
+
+Banner/Hero: ảnh + khẩu hiệu + nút dẫn đến 3 CLB.
+
+Khối giới thiệu: mô tả website/CLB.
+
+Danh sách 3 CLB dạng thẻ (card): English – STEM – Bóng chuyền.
+
+Khối “Sự kiện nổi bật” (tóm tắt 3–6 sự kiện).
+
+Khối “Tuyển thành viên” (thông báo tuyển).
+
+Footer: thông tin trường + liên hệ.
+
+1.4 Chức năng/luồng tương tác
+
+Click menu → chuyển trang.
+
+Click nút CTA hoặc card CLB → chuyển đến trang chi tiết CLB.
+
+Click “Xem tất cả sự kiện” → tới events.html.
+
+Click “Đăng ký tham gia” → tới join.html.
+
+1.5 Quy tắc hiển thị (UI/UX)
+
+Hiển thị dạng 1 cột trên mobile, dạng lưới trên desktop.
+
+Card CLB có hover (đổi màu/đổ bóng).
+
+Các nút CTA nổi bật và dễ nhìn.
+
+2. Trang Danh sách CLB – clubs.html
+2.1 Mục đích
+
+Hiển thị danh sách toàn bộ CLB của trường.
+
+Cho phép người xem chọn CLB và vào trang chi tiết nhanh.
+
+2.2 Nội dung chính
+
+Tiêu đề trang: “Câu lạc bộ THPT Tân Phong”.
+
+Mô tả ngắn: CLB giúp phát triển kỹ năng – kết nối bạn bè.
+
+Danh sách 3 CLB dạng card:
+
+Tên CLB + slogan ngắn
+
+Mục tiêu chính (2–3 ý)
+
+Lịch sinh hoạt (tóm tắt)
+
+Nút “Xem chi tiết”
+
+Khối “Bạn phù hợp CLB nào?” (gợi ý theo sở thích) – dạng bullet.
+
+2.3 Chức năng/luồng tương tác
+
+Click “Xem chi tiết” → chuyển sang:
+
+english-club.html
+
+stem-club.html
+
+volleyball-club.html
+
+Có thể có điều hướng nhanh (anchor) tới từng CLB trong trang (tùy thiết kế).
+
+2.4 Quy tắc hiển thị
+
+Card hiển thị dạng grid 1–3 cột tùy kích thước màn hình.
+
+Mỗi CLB có màu nhận diện riêng (qua CSS class).
+
+3. Trang Chi tiết CLB Tiếng Anh – english-club.html
+3.1 Mục đích
+
+Giới thiệu chi tiết CLB Tiếng Anh: hoạt động, lịch sinh hoạt, lợi ích, cách tham gia.
+
+3.2 Nội dung chính
+
+Giới thiệu CLB
+
+CLB dành cho ai (học sinh thích tiếng Anh, muốn giao tiếp/tự tin).
+
+Tôn chỉ hoạt động: học vui – thực hành – giao lưu.
+
+Mục tiêu & lợi ích
+
+Cải thiện kỹ năng nói/ nghe/ thuyết trình.
+
+Mở rộng từ vựng, phản xạ giao tiếp.
+
+Tăng tự tin và kỹ năng làm việc nhóm.
+
+Hoạt động tiêu biểu
+
+English Speaking Day
+
+Debate/Roleplay
+
+Mini games/Quiz
+
+Giao lưu với khách mời (giả lập)
+
+Lịch sinh hoạt
+
+Ngày/giờ/địa điểm (dạng bảng).
+
+Ban chủ nhiệm
+
+Danh sách vai trò: Chủ nhiệm, Phó, Truyền thông, Học thuật.
+
+FAQ
+
+Điều kiện tham gia?
+
+Có cần giỏi tiếng Anh không?
+
+Tham gia có mất phí không?
+
+Thời gian tuyển thành viên?
+
+CTA tham gia
+
+Nút: “Đăng ký tham gia CLB Tiếng Anh” → join.html#english
+
+3.3 Chức năng/luồng tương tác
+
+Menu/breadcrumb → quay lại clubs.html hoặc index.html.
+
+FAQ mở/đóng bằng <details>.
+
+Nút đăng ký → sang join.html#english.
+
+3.4 Quy tắc hiển thị
+
+Có section rõ ràng, chia khối để dễ đọc.
+
+Ảnh minh họa hoạt động (tối thiểu 2–4 ảnh).
+
+4. Trang Chi tiết CLB STEM – stem-club.html
+4.1 Mục đích
+
+Giới thiệu CLB STEM: dự án, hoạt động nghiên cứu – kỹ thuật, tuyển thành viên.
+
+4.2 Nội dung chính
+
+Giới thiệu CLB
+
+Định hướng STEM: Science – Technology – Engineering – Math.
+
+Mục tiêu: tạo sân chơi sáng tạo, làm dự án thực tế.
+
+Mục tiêu & lợi ích
+
+Tư duy giải quyết vấn đề.
+
+Kỹ năng làm dự án, thuyết trình.
+
+Tiếp cận công nghệ/mô hình/robot (giả lập tùy nội dung).
+
+Hoạt động tiêu biểu
+
+Workshop: thiết kế mô hình, thí nghiệm khoa học.
+
+Cuộc thi nhỏ: ý tưởng sáng tạo, chế tạo đơn giản.
+
+Dự án theo nhóm theo chủ đề.
+
+Dự án nổi bật (nên có)
+
+2–3 dự án mẫu:
+
+Mục tiêu dự án
+
+Kết quả/ảnh minh họa
+
+Vai trò các thành viên
+
+Lịch sinh hoạt
+
+Dạng bảng: ngày/giờ/phòng học.
+
+FAQ
+
+Có cần biết lập trình không?
+
+Có cần mang dụng cụ không?
+
+CLB ưu tiên khối lớp nào?
+
+CTA tham gia
+
+Nút: “Đăng ký tham gia CLB STEM” → join.html#stem
+
+4.3 Chức năng
+
+FAQ mở/đóng bằng <details>.
+
+Link “Dự án nổi bật” có thể dùng anchor: #projects.
+
+5. Trang Chi tiết CLB Bóng Chuyền – volleyball-club.html
+5.1 Mục đích
+
+Giới thiệu CLB Bóng chuyền: luyện tập, đội tuyển, lịch tập, hoạt động thi đấu.
+
+5.2 Nội dung chính
+
+Giới thiệu CLB
+
+Dành cho học sinh yêu thể thao, muốn rèn sức khỏe và tinh thần đồng đội.
+
+Mục tiêu & lợi ích
+
+Nâng cao thể lực, phản xạ.
+
+Kỹ năng phối hợp đồng đội.
+
+Kỷ luật, tinh thần thi đấu.
+
+Hoạt động tiêu biểu
+
+Lịch luyện tập định kỳ.
+
+Giao hữu nội bộ.
+
+Tham gia giải cấp trường/cụm (giả lập).
+
+Lịch tập luyện
+
+Ngày/giờ/sân tập (bảng).
+
+Nội quy cơ bản
+
+Trang phục khi tập.
+
+Đúng giờ, an toàn khi luyện tập.
+
+FAQ
+
+Người mới có tham gia được không?
+
+Có cần đồng phục không?
+
+Tiêu chí chọn đội thi đấu?
+
+CTA tham gia
+
+Nút: “Đăng ký tham gia CLB Bóng chuyền” → join.html#volleyball
+
+5.3 Chức năng
+
+Link “Xem thư viện ảnh thi đấu” → gallery.html#volleyball.
+
+6. Trang Sự kiện/Hoạt động – events.html
+6.1 Mục đích
+
+Cung cấp danh sách hoạt động/sự kiện theo thời gian cho 3 CLB.
+
+Tạo cảm giác website “luôn cập nhật”.
+
+6.2 Nội dung chính
+
+Tiêu đề + mô tả “Các hoạt động nổi bật”.
+
+Danh sách sự kiện dạng card hoặc timeline.
+Mỗi sự kiện gồm:
+
+Tên sự kiện
+
+CLB tổ chức (tag)
+
+Thời gian
+
+Địa điểm
+
+Mô tả ngắn (1–2 câu)
+
+6.3 Chức năng
+
+Điều hướng theo CLB bằng anchor:
+
+#english, #stem, #volleyball
+
+Nút “Xem chi tiết” → kéo xuống section mô tả dài hơn (cùng trang) hoặc chuyển tới trang CLB.
+
+6.4 Quy tắc hiển thị
+
+Sự kiện sắp tới đặt lên đầu.
+
+Tag CLB có màu riêng.
+
+7. Trang Thư viện ảnh – gallery.html
+7.1 Mục đích
+
+Lưu trữ hình ảnh hoạt động của 3 CLB.
+
+Tăng tính trực quan và uy tín.
+
+7.2 Nội dung chính
+
+Tiêu đề “Thư viện ảnh”.
+
+Bộ ảnh dạng lưới theo CLB (3 section).
+Mỗi ảnh có:
+
+Ảnh thumbnail
+
+Caption ngắn (ví dụ: “English Speaking Day 2025”)
+
+7.3 Chức năng
+
+Click menu/anchor để tới album từng CLB:
+
+gallery.html#english, #stem, #volleyball
+
+Hover overlay hiển thị caption.
+
+7.4 Quy tắc hiển thị
+
+Grid 2 cột mobile, 3–4 cột desktop.
+
+Ảnh đồng nhất tỉ lệ (dùng CSS object-fit: cover).
+
+8. Trang Tham gia/Tuyển thành viên – join.html
+8.1 Mục đích
+
+Cung cấp thông tin tuyển thành viên và form đăng ký tham gia CLB.
+
+8.2 Nội dung chính
+
+Thông báo tuyển
+
+Thời gian tuyển, đối tượng, địa điểm gặp mặt.
+
+Quy trình tham gia
+
+Bước 1: Đọc thông tin CLB
+
+Bước 2: Điền form
+
+Bước 3: Tham gia buổi giới thiệu/tryout
+
+Bước 4: Nhận thông báo kết quả
+
+Form đăng ký (giả lập)
+Trường thông tin:
+
+Họ và tên (bắt buộc)
+
+Lớp (bắt buộc)
+
+CLB đăng ký (radio/checkbox)
+
+Sở thích/kỹ năng
+
+Lý do tham gia (textarea)
+
+SĐT hoặc email (tùy chọn)
+
+Nút “Gửi đăng ký”
+
+8.3 Chức năng/luồng tương tác
+
+Khi bấm “Gửi”:
+
+Điều hướng sang thanks.html (giả lập gửi thành công).
+
+Có anchor để tự động chọn phần CLB:
+
+join.html#english, #stem, #volleyball (hiển thị section phù hợp).
+
+8.4 Quy tắc hiển thị
+
+Form rõ ràng, có label đầy đủ.
+
+Thông báo: “Website tĩnh – thông tin gửi chỉ mang tính mô phỏng” (nếu GV cho phép).
+
+9. Trang Liên hệ – contact.html
+9.1 Mục đích
+
+Cung cấp thông tin liên hệ của trường và CLB.
+
+Cho phép gửi tin nhắn liên hệ (giả lập).
+
+9.2 Nội dung chính
+
+Thông tin trường:
+
+Tên trường: THPT Tân Phong
+
+Địa chỉ (nếu có)
+
+Email/số điện thoại (nếu có)
+
+Thông tin liên hệ CLB:
+
+Kênh liên hệ (fanpage/nhóm lớp – nếu được)
+
+Form liên hệ:
+
+Họ tên
+
+Nội dung liên hệ
+
+Email/điện thoại
+
+9.3 Chức năng
+
+Bấm “Gửi” → thanks.html (giả lập).
+
+10. Trang Cảm ơn – thanks.html
+10.1 Mục đích
+
+Xác nhận hành động “đăng ký/ liên hệ” đã được gửi (mô phỏng).
+
+10.2 Nội dung chính
+
+Thông báo: “Cảm ơn bạn đã đăng ký/ liên hệ”.
+
+Hướng dẫn: “Hãy theo dõi thông báo từ CLB hoặc liên hệ trực tiếp…”
+
+Nút:
+
+“Về Trang chủ” → index.html
+
+“Xem các CLB” → clubs.html
